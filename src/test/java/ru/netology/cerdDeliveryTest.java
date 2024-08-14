@@ -40,7 +40,6 @@ class cerdDeliveryTest {
         $(".icon_name_calendar").click();
         $$(".calendar__day").find(Condition.text(getDate(4,"dd"))).click();
         String planeDate = $("[data-test-id='date'] input").getValue();
-        System.out.println(planeDate);
         $("[data-test-id='name'] input").setValue("Имя Фамилия");
         $("[data-test-id='phone'] input").setValue("+71234567890");
         $("[data-test-id='agreement']").click();
